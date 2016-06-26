@@ -62,6 +62,7 @@ Resources
 -----
 
 [This component on YiiFramework.com](http://www.yiiframework.com/extension/yii2-twilio/)
+
 [Twilio.com](http://www.twilio.com)
 
 
