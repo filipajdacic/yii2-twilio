@@ -61,6 +61,7 @@ For mor SDK functions and usage documentation feel free to visit official Twilio
 Resources
 -----
 
+[This component on YiiFramework.com](http://www.yiiframework.com/extension/yii2-twilio/)
 [Twilio.com](http://www.twilio.com)
 
 
