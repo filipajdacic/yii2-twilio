@@ -1,6 +1,6 @@
-Twillio for Yii2
+Twilio for Yii2
 ================
-This component is YII2 wrapper for Twilio PHP module
+This component is YII2 wrapper for Twilio PHP SDK.
 
 Installation
 ------------
@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \filipajdacic\yiitwilio\AutoloadExample::widget(); ?>```
+<?= \filipajdacic\yiitwilio\YiiTwilio::widget(); ?>```
