@@ -2,8 +2,17 @@
 
 namespace filipajdacic\yiitwilio;
 
-use yii\base\Component; //include YII component class
-use Twilio\Services\Twilio;
+use yii\base\Component;
+use \Services_Twilio;
+
+/**
+ * YiiTwilio class
+ * @author Filip Ajdacic <ajdasoft@gmail.com>
+ * @license MIT
+ * @version 1.0
+ * @copyright (C) 2016 Filip Ajdacic <ajdasoft@gmail.com>
+ * @see http://github.com/filipajdacic
+ * */
 
 class YiiTwilio extends Component
 {
@@ -28,23 +37,21 @@ class YiiTwilio extends Component
 
     public $auth_key;
 
-
-
     /**
      * init() called by yii.
      */
 
-
     public function init()
-    {
-       
-      try {
-            $this->twilioClass = new Services_Twilio($this->account_sid, $this->auth_key);
-      } catch (Exception $e) {
-            throw $e;
-      }
+    {   
+          try {
+                $this->twilioClass = new Services_Twilio($this->account_sid, $this->auth_key);
+          } catch (Exception $e) {
+                throw $e;
+          }  
+    }
 
-       
+    public function initTwilio() {
+        return $this->twilioClass;
     }
 
     /**
@@ -64,8 +71,5 @@ class YiiTwilio extends Component
             return parent::__call($methodName, $methodParams);
         }
     }
-
-
-
 
 }
