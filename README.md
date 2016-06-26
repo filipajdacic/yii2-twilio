@@ -36,9 +36,9 @@ Once the extension is installed, simply use it in your code by putting this in y
     ),
     ...
 );
+```
 
 After you have configured a component, you can use it for example in this way:
-
 
 ```php
 
