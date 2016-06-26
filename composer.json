@@ -1,0 +1,21 @@
+{
+    "name": "filipajdacic/yii2-twilio",
+    "description": "This component is YII2 wrapper for Twilio PHP module",
+    "type": "library",
+    "keywords": ["yii2","extension","twillio","sms","voice","video"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Filip Ajdacic",
+            "email": "ajdasoft@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "filipajdacic\\yiitwilio\\": ""
+        }
+    }
+}
