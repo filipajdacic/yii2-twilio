@@ -58,4 +58,10 @@ After you have configured a component, you can use it for example in this way:
 
 For mor SDK functions and usage documentation feel free to visit official Twilio PHP SDK documentation section [here](https://www.twilio.com/docs/libraries/php).
 
+Resources
+-----
+
+[Twilio.com](http://www.twilio.com)
+
+
 If you have any questions, feel free to ask.
