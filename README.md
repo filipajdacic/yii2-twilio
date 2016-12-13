@@ -16,7 +16,7 @@ php composer.phar require --prefer-dist filipajdacic/yii2-twilio "master@dev"
 or add
 
 ```
-"filipajdacic/yii2-twilio": "*"
+"filipajdacic/yii2-twilio": "master@dev"
 ```
 
 to the require section of your `composer.json` file.
