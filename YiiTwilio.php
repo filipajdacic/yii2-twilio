@@ -3,7 +3,7 @@
 namespace filipajdacic\yiitwilio;
 
 use yii\base\Component;
-use \Services_Twilio;
+use \Twilio\Rest\Client;
 
 /**
  * YiiTwilio class
@@ -26,13 +26,13 @@ class YiiTwilio extends Component
 
 
     /**
-	 ** @var string $account_sid -> Twilio Account ID
+     ** @var string $account_sid -> Twilio Account ID
      */
     public $account_sid;
 
 
     /**
-	 ** @var string $auth_key -> Twilio Authorization Key
+     ** @var string $auth_key -> Twilio Authorization Key
      */
 
     public $auth_key;
@@ -44,7 +44,7 @@ class YiiTwilio extends Component
     public function init()
     {   
           try {
-                $this->twilioClass = new Services_Twilio($this->account_sid, $this->auth_key);
+                $this->twilioClass = new \Twilio\Rest\Client($this->account_sid, $this->auth_key);
           } catch (Exception $e) {
                 throw $e;
           }  
