@@ -45,10 +45,11 @@ After you have configured a component, you can use it for example in this way:
     $twilioService = Yii::$app->Yii2Twilio->initTwilio();
 
         try {
-            $message = $twilioService->account->messages->create(array(
-                "From" => "+12345678901", // From a valid Twilio number
-                "To" => "+12345678901",   // Text this number
-                "Body" => "Hello from my Yii2 Application!",
+            $message = $twilioService->account->messages->create(
+                "+12345678901", // To a number that you want to send sms
+                array(
+                "from" => "+12345678901",   // From a number that you are sending
+                "body" => "Hello from my Yii2 Application!",
             ));
         } catch (\Twilio\Exceptions\RestException $e) {
                 echo $e->getMessage();
